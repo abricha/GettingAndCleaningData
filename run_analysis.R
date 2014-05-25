@@ -1,7 +1,14 @@
-#The run_analysis.R script is developed with the purpose to read in the data captured through acceleromator and gyroscope #sensors in the Samsung Galaxy II phone captured for various activities (walking, walking upstairs, waling downstairs, #sitting, laying, laying for some 30 subjects. The script reads in in the UCI HAR Dataset, merge it, extract the mean and #stand deviation measures, transforms it, and finally produces a tidy data set in an output file. The data set can be #found in: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+#The run_analysis.R script is developed with the purpose to read in the data captured through acceleromator and gyroscope 
+#sensors in the Samsung Galaxy II phone captured for various activities (walking, walking upstairs, waling downstairs, 
+#sitting, laying, laying for some 30 subjects. The script reads in in the UCI HAR Dataset, merge it, extract the mean and 
+#stand deviation measures, transforms it, and finally produces a tidy data set in an output file. The data set can be 
+#found in: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 
-#The script first looks for a directory named UCI HAR Dataset to read in the data and if not found, it will look for the #getdata_projectfiles_UCI HAR Dataset.zip file and unzip it. If neither the directory nor the zip file is found, the #script will error out with an informative message.The script is expected to be run in a working directory containing the #UCI HAR Dataset directory.
+#The script first looks for a directory named UCI HAR Dataset to read in the data and if not found, it will look for the 
+#getdata_projectfiles_UCI HAR Dataset.zip file and unzip it. If neither the directory nor the zip file is found, the 
+#script will error out with an informative message.The script is expected to be run in a working directory containing the 
+#UCI HAR Dataset directory.
 
 library(reshape2)
 
